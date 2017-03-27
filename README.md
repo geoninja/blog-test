@@ -4,23 +4,23 @@ Just testing to create a repository with settings and content for a static blog 
 
 Steps to create new post:
 
-1. Create the markdown file in the content folder (sub-folders for archiving should be automatically set, per Pelican config file settings)
+1. Create the markdown file in the content folder (sub-folders for archiving should be automatically set, per Pelican config file settings).
 
 2. In the terminal, execute:
 
-        pelican content -o output -s pelicanconf.py
-        ghp-import output
+        $ pelican content -o output -s pelicanconf.py
+        $ ghp-import output
 
 
-3. Check git status. Add and commit the markdown file to the master branch. Note: it seems this step may not be required as it is possibly handled by ghp-import? See [here](https://github.com/getpelican/pelican/blob/master/docs/tips.rst#publishing-to-github) 
+    The `ghp-import output` command updates the local gh-pages branch with the content of the output directory (creating the branch if it doesn't already exist).
 
 
-4. Finally, push the changes to the gh-pages branch from the local repo:
+3. Push the changes to the remote gh-pages branch:
 
-        git push origin gh-pages  
+        $ git push origin gh-pages  
 
    
-To serve the page at <http://localhost:8000:>
+4. To serve the page at <http://localhost:8000:>
 
-    cd output
-    python -m http.server 8000 # For Python 3
+        $ cd output
+        $ python -m http.server 8000 # For Python 3
