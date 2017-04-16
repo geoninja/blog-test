@@ -12,6 +12,8 @@ Steps to create new post:
         $ ghp-import output
 
 
+    The first command creates a html file from the markdown file in the content folder and places it in the output folder.
+
     The `ghp-import output` command updates the local gh-pages branch with the content of the output directory (creating the branch if it doesn't already exist).
 
 
