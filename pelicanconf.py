@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Paula Alves'
 SITENAME = "About Data Science"
-SITEURL = 'https://geoninja.github.io/blog-test/'
+SITEURL = 'https://geoninja.github.io/blog-test'
 TIMEZONE = "America/Los_Angeles"
 
 THEME = 'themes/bootstrap2'
